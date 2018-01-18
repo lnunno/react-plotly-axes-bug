@@ -1,0 +1,16 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# Sensible defaults, can be overridden by file extension below.
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.{yml,yaml,xml,json,html}]
+indent_size = 2
+
+[*.{js,jsx,ts,tsx}]
+indent_size = 2

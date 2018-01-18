@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "removeComments": true,
+    "jsx": "react",
+    "outDir": "./build/js",
+    "sourceMap": true,
+    "pretty": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "es5",
+      "scripthost",
+      "es6",
+      "es2017",
+      "dom"
+    ],
+    "baseUrl": "./",
+    "paths": {
+      // These MUST be in sync with Webpack's resolve.alias property.
+      // See: https://www.typescriptlang.org/docs/handbook/module-resolution.html#path-mapping
+    }
+  },
+  "include": [
+    "src/ts/**/*"
+  ]
+}

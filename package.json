@@ -1,0 +1,59 @@
+{
+  "name": "webapp",
+  "version": "0.0.1",
+  "description": "Super cool web app!",
+  "main": "webapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf build node_modules",
+    "reinstall": "npm run clean && npm install",
+    "rebuild": "npm run clean && npm install && npm run build",
+    "restart": "npm run clean && npm install && npm run start",
+    "yreinstall": "yarn run clean && yarn",
+    "yrebuild": "yarn run clean && yarn && yarn run build",
+    "yrestart": "yarn run clean && yarn && yarn run start",
+    "start": "rm -rf build && cross-env DEBUG=express\\:* webpack-dev-server --config webpack.config.dev.js --progress --colors",
+    "build": "rm -rf build && cross-env NODE_ENV=production webpack --config webpack.config.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "private": true,
+  "author": "",
+  "license": "Sandia Internal Use Only",
+  "dependencies": {
+    "ify-loader": "^1.1.0",
+    "plotly.js": "^1.32.0",
+    "react": "^16.2.0",
+    "react-addons-css-transition-group": "^15.5.2",
+    "react-dom": "^16.2.0",
+    "react-plotly.js": "^1.2.0",
+    "react-redux": "^5.0.4",
+    "react-transition-group": "^2.2.1",
+    "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.2"
+  },
+  "devDependencies": {
+    "@types/plotly.js": "^1.28.10",
+    "@types/react": "^16.0.27",
+    "@types/react-dom": "^16.0.3",
+    "@types/react-redux": "^5.0.14",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.1",
+    "file-loader": "^1.1.5",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.19.0",
+    "ts-loader": "^3.2.0",
+    "tslint": "^5.1.0",
+    "tslint-loader": "^3.5.2",
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.0.3",
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.4.5",
+    "webpack-merge": "^4.1.0"
+  }
+}
