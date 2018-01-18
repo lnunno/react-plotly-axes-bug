@@ -1,4 +1,4 @@
-# Super cool web app!
+# Plotly Example
 
 ## Quick Start
 
